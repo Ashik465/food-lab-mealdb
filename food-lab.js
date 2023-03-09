@@ -84,6 +84,14 @@ cardContainer.appendChild(div);
 }
 
 
+// enter click on search-field
+
+document.getElementById("search-field").addEventListener("keypress", function (event) {
+  if (event.key === "Enter") {
+     loadMeals();
+  }
+})
+
 // show all btn 
 
 const showAll = async() =>{
